@@ -1,0 +1,10 @@
+---
+
+- name: hyeta
+  hosts: all
+  become: yes
+  tasks:
+
+  - name: directory i create aaaaaa
+    file: path=/home/user22/Project22 state=directory
+    file: path=/home/user22/Ansible22 state=directory

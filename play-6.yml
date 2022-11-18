@@ -1,0 +1,11 @@
+---
+- name: cow
+  hosts: all
+  become: yes
+  tasks:
+
+  - name: cow2
+    apt:
+      name: cowsay, cmatrix, mc
+      state: present
+

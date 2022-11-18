@@ -1,0 +1,13 @@
+---
+- name: something
+  hosts: all
+  become: yes
+  tasks:
+
+  - name: stranica
+    copy:
+      src: "{{ item }}"
+      dest: /var/www/html
+      remote_src: no
+    with_fileglob:
+      - /home/user22/project/index.html

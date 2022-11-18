@@ -1,0 +1,9 @@
+---
+
+- name: massive show
+  hosts: all
+  become: yes
+  tasks:
+
+  - ansible.builtin.debug:
+     var: ansible_facts

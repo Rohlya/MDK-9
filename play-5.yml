@@ -1,0 +1,22 @@
+---
+
+- name: wtf is going on
+  hosts: all
+  become: yes
+  tasks:
+
+  - name: snjhumfdr1
+    copy:
+      src: "{{ item }}"
+      dest: /home/user22/Project22
+      remote_src: no
+    with_fileglob:
+      - /home/user22/project/project.txt
+
+  - name: mfdr2
+    copy:
+      src: "{{ item }}"
+      dest: /home/user22/Ansible22
+      remote_src: no
+    with_fileglob:
+      - /home/user22/project/ansible.txt
